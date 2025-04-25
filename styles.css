@@ -1,0 +1,91 @@
+:root{
+    --cor-primaria:rgba(71, 188, 110, 0.467);
+    --cor-secundaria:rgba(63, 182, 123, 0.333);
+    --cor-clara:rgba(11, 43, 76, 0.267);
+    --cor-escura:rgba(196, 87, 14, 0.533);
+    --cor-destaque:rgba(162, 39, 131, 0.267);
+}
+
+*{ 
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+body{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--cor-clara);
+    background: linear-gradient(135deg, var(--cor-primaria), var(--cor-escura));
+    padding: 1rem;
+    line-height: 2rem;
+}
+
+header{
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: var(--cor-primaria);
+    box-shadow: 5px 4px 3px 2px rgba(0,0 ,0 ,0.2);
+}
+
+head h1{
+    font-size: 2rem;
+    color: var(--cor-destaque);
+}
+
+main{
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+section{
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 5px 4px 5px 1px rgba(0,0 ,0 ,0.2);
+}
+
+section *{
+    margin: 0.9rem 0;
+}
+
+section .topico{
+    margin: 2rem 0rem;
+}
+
+footer{
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+}
+
+@keyframes fadeInDown {
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    } to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    } to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
